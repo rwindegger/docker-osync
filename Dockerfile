@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --update add bash git openssh && \
+RUN apk --update add bash rsync git openssh && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/* && \
 	mkdir -p /opt && \
