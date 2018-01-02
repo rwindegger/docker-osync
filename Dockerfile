@@ -10,4 +10,4 @@ RUN apk --update add bash rsync inotify-tools git openssh && \
 ADD osync.conf /etc/
 
 ENTRYPOINT ["/opt/osync/osync.sh"]
-CMD ["/etc/osync.conf --on-changes"]
+CMD ["/etc/osync.conf", "--on-changes"]
